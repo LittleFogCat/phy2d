@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="outCircleColor">#1D333333</color>
+    <color name="outCircleDecorationColor">#1DFFFFFF</color>
+    <color name="innerCircleColor">#FF2A2A2A</color>
+    <color name="innerCircleDecorationColor">#FF72BBE8</color>
+    <color name="innerCircleMask1">#FF72BBE8</color>
+    <color name="innerCircleMask2">#33528DAF</color>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="JoystickView">
+        <attr name="outRadius" format="dimension" />
+        <attr name="innerRadius" format="dimension" />
+        <attr name="outRadiusPercent" format="float" />
+        <attr name="innerRadiusPercent" format="float" />
+        <attr name="alphaWhenHide" format="float" />
+        <attr name="outBgColor" format="color" />
+        <attr name="outDecColor" format="color" />
+        <attr name="innerBgColor" format="color" />
+        <attr name="innerDecColor" format="color" />
+        <attr name="innerCircleMask1" format="color" />
+        <attr name="innerCircleMask2" format="color" />
+    </declare-styleable>
+</resources>

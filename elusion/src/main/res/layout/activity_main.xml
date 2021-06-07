@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:joystick="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <top.littlefogcat.elusion.ui.GamePanel
+        android:id="@+id/panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <top.littlefogcat.common.ui.JoystickView
+        android:id="@+id/joy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="8dp"
+        joystick:alphaWhenHide="0.3"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/settingButton"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_margin="16dp"
+        android:alpha="0.6"
+        android:background="@drawable/ic_action_setting" />
+
+    <LinearLayout
+        android:id="@+id/settingLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#AA464646"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最大速度"
+                android:textColor="#fff" />
+
+            <SeekBar
+                android:id="@+id/seekMaxSpeed"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textMaxSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小球加速度"
+                android:textColor="#fff" />
+
+            <SeekBar
+                android:id="@+id/seekAccelerate"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textAccelerate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:id="@+id/closeButton"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_action_close" />
+        </FrameLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,10 @@
+rootProject.name = "Small Games"
+include ':airecraftwar'
+include ':common'
+include ':elusion'
+include ':app'
+include ':phy2d'
+include ':math'
+include ':billiards'
+include ':joysticksample'
+include ':bouncedemo'
